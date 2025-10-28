@@ -32,7 +32,7 @@ public class A{
     int[] arr = {8,3,6,4,5,3,9};
     int n = arr.length;
     
-    int secondmax = findSecondMax(arr);
-    System.out.print("Secondmax of the array is"+secondmax);
+    int ans = findSecondMax(arr);
+    System.out.print("Secondmax of the array is: "+ans);
     }
 }
