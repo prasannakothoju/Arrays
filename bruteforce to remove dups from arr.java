@@ -26,3 +26,6 @@ public class A {
         System.out.print(arr[n - 1]);
     }
 }
+
+//TC: O(n log n)
+// SC: O(1)
