@@ -16,3 +16,6 @@ public class A{
         System.out.println("Second largest:"+arr[n-2]);
     }
 }
+
+//Time Complexity: O(n log n)
+//Space Complexity: O(1)
