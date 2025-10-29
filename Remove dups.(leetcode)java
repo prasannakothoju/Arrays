@@ -1,0 +1,44 @@
+class Solution{
+    public int removeDuplicates(int[] arr){
+        
+        //check whether arr is empty or not
+        if(arr.length==0) return 0;
+        
+        //two pointer method
+        //by comparing elements if repeated removing dups
+        int i=0; //At the start, the first number is always unique.So i            starts at index 0.
+        int n = arr.length;
+        
+        //here comes 2nd pointer
+        for(int j=1;j<n;j++){ //j starts from index 1 because we already know index 0 is unique.j will scan the array from left to right.
+        
+        if(arr[j] != arr[i]){ //Since the array is sorted, duplicates are next to each other.When nums[j] is different from nums[i], it means:we found a new unique number.
+        
+        i++;//Move i to the next position.
+             //Copy the new unique number into that position.
+        arr[i] = arr[j];
+            
+        }
+        }
+        
+        return i+1; //i is an index (starting at 0) so number of elements = index + 1
+        }
+        
+        public static void main(String[] args){
+            int[] arr = {1,1,2,2,3,3,4,4,5};
+            Solution s = new Solution();
+            int ans = s.removeDuplicates(arr);
+
+            System.out.print("Array after removing duplicates : ");
+            for(int k = 0; k < ans; k++){
+                System.out.print(arr[k] + " ");
+            }
+        }
+}
+
+//TC: O(n) — Linear Time .We scan the array once
+//SC: O(1) — Constant Space.We do not create a new array
+
+
+
+
