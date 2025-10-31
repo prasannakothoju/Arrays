@@ -42,5 +42,11 @@ public class A {
         movezeros(arr);
 
         System.out.println("Array after moving zeros to end: " + Arrays.toString(arr));
+
+        // ⏱ Time Complexity: O(n)
+        // 💾 Space Complexity: O(n)
+        // Explanation:
+        // - We loop through the array a few times → O(n)
+        // - We use an extra ArrayList to store non-zero elements → O(n)
     }
 }
