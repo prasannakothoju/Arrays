@@ -22,3 +22,6 @@ public class A {
         System.out.println("Missing num is: " + sol);
     }
 }
+
+//Time Complexity: O(n) (single loop)
+//Space Complexity: O(1) (no extra space used).
