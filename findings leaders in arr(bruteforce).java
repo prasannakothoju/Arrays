@@ -1,5 +1,7 @@
 //finding the leader
 //brute force
+//Time Complexity: O(n^2) -> due to nested loops
+//Space Complexity: O(n) -> for storing leaders in ArrayList
 
 import java.util.*;
 
